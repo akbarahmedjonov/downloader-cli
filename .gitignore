@@ -1,0 +1,9 @@
+build/*
+dist/*
+downloader_cli.egg-info/*
+downloader_cli/__pycache__/*
+tests/__pycache__/*
+test.py
+__pycache__
+
+.vscode

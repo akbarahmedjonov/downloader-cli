@@ -1,0 +1,21 @@
+[package]
+name = "downloader-cli"
+version = "0.3.4"
+authors = ["Akbar Ahmedjonov <akbarahmedjonovdev@gmail.com>"]
+description = "A simple downloader written in Rust with an awesome progressbar"
+license = "MIT"
+repository = "https://github.com/akbarahmedjonov/downloader-cli"
+edition = "2021"
+
+[[bin]]
+name = "dw"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }
+reqwest = { version = "0.12", features = ["blocking"] }
+regex = "1.10"
+termcolor = "1.4"
+indicatif = "0.17"
+shellexpand = "3.1"
+terminal_size = "0.3"
